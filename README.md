@@ -1,20 +1,8 @@
-# FreelanceFlow Dashboard
+# FreelanceFlow
 
-## Project Overview
+A modern SaaS dashboard for freelancers to manage clients, projects, and invoices.
 
-FreelanceFlow is a modern SaaS dashboard for freelancers to manage clients, projects, invoices, and revenue tracking. Built with Next.js 14+, TypeScript, and Tailwind CSS, inspired by TailAdmin design patterns.
-
-## Tech Stack
-
-- **Framework:** Next.js 14+ (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS with Dark Mode
-- **Charts:** Recharts
-- **Icons:** Custom SVG icons
-- **Authentication:** Custom auth pages with form validation
-- **Theme:** Light/Dark mode with system preference detection
-
-## Getting Started
+## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -222,12 +210,67 @@ const { data: stats } = useQuery({
 
 ## Available Scripts
 
+## 🌳 Git Branch Structure
+
+This project follows a professional Git branching strategy:
+
+### Main Branches
+- **`main`** - Production-ready code (protected branch)
+- **`develop`** - Main development branch
+
+### Feature Branches
+- **`feature/*`** - New features (e.g., `feature/user-authentication`)
+- **`hotfix/*`** - Urgent bug fixes for production
+
+### Workflow
+1. Create feature branches from `develop`
+2. Work on features in dedicated branches
+3. Create Pull Requests to merge into `develop`
+4. When ready for production, merge `develop` → `main`
+
+### Example Commands
 ```bash
-npm run dev      # Start development server
-npm run build    # Build for production
-npm run start    # Start production server
-npm run lint     # Run ESLint
+# Create a new feature branch
+git checkout -b feature/my-new-feature
+
+# Push your feature branch
+git push -u origin feature/my-new-feature
+
+# Create a Pull Request on GitHub
 ```
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Styling:** Tailwind CSS
+- **Language:** TypeScript
+- **State Management:** React Context
+- **Charts:** Recharts
+- **Icons:** Heroicons
+
+## 📁 Project Structure
+
+```
+src/
+├── app/                 # Next.js App Router pages
+├── components/          # Reusable UI components
+├── contexts/           # React Context providers
+├── data/               # Mock data and constants
+├── hooks/              # Custom React hooks
+├── services/           # API services
+└── utils/              # Utility functions
+```
+
+## 📝 Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 📄 License
+
+This project is private and proprietary.
 
 ## Customization
 
